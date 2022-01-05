@@ -1,0 +1,256 @@
+$main-color: rgb(20, 20, 20); 
+$text-color: rgb(255, 255, 255); 
+
+.center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+body {
+    background-color: $main-color; 
+    margin: 0px; 
+    color: white; 
+    text-align: center; 
+} 
+
+.location-page { 
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    background-repeat: no-repeat !important; 
+    background-position: center !important; 
+    background-size: cover !important; 
+    //margin-top: 75px; 
+    @extend .center; 
+    flex-direction: column; 
+
+    .dark-back {
+        position: fixed; 
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.45); 
+        z-index: -1; 
+    } 
+
+    .location-container {
+        width: 80%; 
+        height: 80%; 
+        @extend .center; 
+        align-items: flex-end; 
+
+        .location-content {
+            width: 100%; 
+            height: auto; 
+            @extend .center; 
+            justify-content: space-between; 
+
+            h1 {
+                font-weight: 400;
+                font-size: 25px;
+                text-align: left; 
+            } 
+
+            .go-forward-button {
+                @extend .center; 
+                cursor: pointer; 
+                transition: all ease 500ms; 
+
+                &:hover {
+                    opacity: 0.55; 
+                }
+
+                span {
+                    margin: 0px 10px; 
+                    font-size: 18px; 
+                    font-weight: 400; 
+                    margin-bottom: 5px; 
+                }
+
+                button {
+                    margin: 0px 10px; 
+                    width: 50px; 
+                    height: 50px; 
+                    outline: none; 
+                    border-radius: 100%; 
+                    background-color: rgba(0, 0, 0, 0); 
+                    border: 3px solid white; 
+                    @extend .center; 
+                    cursor: pointer; 
+
+                    img {
+                        width: 25px; 
+                        height: 25px; 
+                        transform:rotate(270deg); 
+                        padding-top: 5px;  
+                    }
+                }
+            }
+        }
+    } 
+    
+    .second-location-container {
+        width: 95%; 
+        height: 80%; 
+        @extend .center; 
+
+        .second-location-content {
+            width: 100%; 
+            height: 100%; 
+            @extend .center; 
+            justify-content: space-between; 
+
+            .go-back-button-container { 
+                width: 30%; 
+                height: 100%; 
+                @extend .center; 
+                justify-content: flex-start; 
+                align-items: flex-end; 
+
+                .go-back-button {
+                    @extend .center; 
+                    cursor: pointer; 
+                    transition: all ease 500ms; 
+
+                    &:hover {
+                        opacity: 0.55; 
+                    }
+
+                    span {
+                        margin: 0px 10px; 
+                        font-size: 18px; 
+                        font-weight: 400; 
+                        margin-bottom: 5px; 
+                    } 
+
+                    button {
+                        margin: 0px 10px; 
+                        width: 50px; 
+                        height: 50px; 
+                        outline: none; 
+                        border-radius: 100%; 
+                        background-color: rgba(0, 0, 0, 0); 
+                        border: 3px solid white; 
+                        @extend .center; 
+                        cursor: pointer; 
+
+                        img {
+                            width: 25px; 
+                            height: 25px; 
+                            transform:rotate(90deg); 
+                            padding-top: 5px; 
+                        }
+                    }
+                }
+            } 
+
+            .second-page-location-container {
+                width: 60%; 
+                height: 75%; 
+                overflow: hidden; 
+
+                .name-country-container {
+                    @extend .center; 
+                    flex-direction: column; 
+                    align-items: flex-start; 
+
+                    h1 {
+                        font-weight: 400;
+                        font-size: 25px;
+                        text-align: left;
+                        margin: 0px !important;
+                    } 
+
+                    h3 {
+                        font-weight: 400; 
+                        font-size: 18px; 
+                        text-align: left; 
+                        margin: 0px !important; 
+                    }
+                } 
+
+                .location-content {
+                    width: 75%; 
+                    height: auto; 
+
+                    p {
+                        text-align: left; 
+                        font-weight: 300; 
+                        font-size: 16px; 
+                        margin: 35px 0px;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media only screen and (min-width: 1000px) {
+    .location-page .second-location-container .second-location-content .second-page-location-container .location-content {
+        margin-top: 65px; 
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+    .location-page .location-container .location-content h1 {
+        font-size: 35px; 
+    } 
+
+    .location-page .location-container .location-content .go-forward-button span {
+        font-size: 20px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .name-country-container h1 {
+        font-size: 35px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .name-country-container h3 {
+        font-size: 25px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .location-content p {
+        font-size: 18px; 
+    }
+} 
+
+@media only screen and (min-width: 1800px) {
+    .location-page .location-container .location-content h1 {
+        font-size: 45px; 
+    } 
+
+    .location-page .location-container .location-content .go-forward-button span {
+        font-size: 25px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .name-country-container h1 {
+        font-size: 45px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .name-country-container h3 {
+        font-size: 30px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .second-page-location-container .location-content p {
+        font-size: 22px; 
+    }
+
+    .location-page .location-container .location-content .go-forward-button button {
+        width: 60px; 
+        height: 60px; 
+    }
+
+    .location-page .location-container .location-content .go-forward-button button img {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .location-page .second-location-container .second-location-content .go-back-button-container .go-back-button button {
+        width: 60px; 
+        height: 60px; 
+    } 
+
+    .location-page .second-location-container .second-location-content .go-back-button-container .go-back-button button img {
+        width: 30px; 
+        height: 30px; 
+    }
+}
