@@ -10,9 +10,9 @@ function App() {
 
         {/* <Route path="/" element={<Navigate to="/around-world/home" />} /> */}
 
-        <Route path="/around-world" element={<Navigate to="/around-world/home" />} />
+        {/* <Route path="/around-world" element={<Navigate to="/around-world/home" />} /> */}
     
-        <Route path="/around-world/home" exact index element={<Home />} /> 
+        <Route path="/around-world" index exact element={<Home />} /> 
 
         <Route path="/around-world/search/:value" element={<Search />} /> 
 
