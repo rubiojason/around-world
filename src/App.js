@@ -12,7 +12,7 @@ function App() {
 
         {/* <Route path="/around-world" element={<Navigate to="/around-world/home" />} /> */}
     
-        <Route path="/around-world" index exact element={<Home />} /> 
+        <Route path="/around-world" index element={<Home />} /> 
 
         <Route path="/around-world/search/:value" element={<Search />} /> 
 

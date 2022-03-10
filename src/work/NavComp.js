@@ -56,11 +56,11 @@ function NavComp(props) {
                     {
                         props.pageProp === 'home' ? 
 
-                        <Link className="nav-page-link disabled" to="/around-world/home">Home</Link> 
+                        <Link className="nav-page-link disabled" to="/around-world/">Home</Link> 
                         
                         : 
                         
-                        <Link className="nav-page-link" to="/around-world/home">Home</Link>
+                        <Link className="nav-page-link" to="/around-world/">Home</Link>
                     }
                     {
                         props.pageProp === 'search' ? 
