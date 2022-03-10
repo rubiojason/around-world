@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/around-world/static/css/main.cbf2cc49.css",
-    "main.js": "/around-world/static/js/main.379f6169.js",
+    "main.js": "/around-world/static/js/main.8514708b.js",
     "static/js/787.7bcae279.chunk.js": "/around-world/static/js/787.7bcae279.chunk.js",
     "index.html": "/around-world/index.html",
     "main.cbf2cc49.css.map": "/around-world/static/css/main.cbf2cc49.css.map",
-    "main.379f6169.js.map": "/around-world/static/js/main.379f6169.js.map",
+    "main.8514708b.js.map": "/around-world/static/js/main.8514708b.js.map",
     "787.7bcae279.chunk.js.map": "/around-world/static/js/787.7bcae279.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbf2cc49.css",
-    "static/js/main.379f6169.js"
+    "static/js/main.8514708b.js"
   ]
 }
